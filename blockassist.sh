@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 set -e
+info() {
+  printf "${CYAN}%s${RESET}\n" "$*"
+}
 
 CYAN='\033[0;36m'
 GREEN='\033[1;32m'
