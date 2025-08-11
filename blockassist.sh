@@ -26,16 +26,6 @@ echo -e "${CYAN}
 ${YELLOW}                      :: Powered by Noderhunterz ::
 ${NC}"
 
-# ==== 1. Clone BlockAssist ====
-info "Cloning blockassist repository..."
-if [ ! -d "blockassist" ]; then
-  git clone https://github.com/gensyn-ai/blockassist.git
-fi
-cd blockassist
-
-# ==== 2. Modal-login step ====
-info "Setting up modal-login for user authentication..."
-
 # Ensure npm/yarn/localtunnel
 if ! command -v npm >/dev/null; then
   info "Installing npm..."
