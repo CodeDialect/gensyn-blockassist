@@ -123,4 +123,9 @@ The script will:
   ```
   to your `~/.bashrc` or `~/.zshrc`.
 
+Malmo Timeout 60s
+```bash
+sed -i 's#python -m malmo.minecraft launch#python -m malmo.minecraft launch --timeout 300#' scripts/run_malmo.sh
+```
+
 ---
