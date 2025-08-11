@@ -51,11 +51,18 @@ sudo npm install -g localtunnel
 lt --port 3000
 ```
 
-
-## Blockassist Installation
+Go back to old tab ctrl c that
+then
 ```bash
-bash <(curl -sL https://raw.githubusercontent.com/CodeDialect/gensyn-blockassist/main/blockassist.sh)
+cd ..
 ```
+
+Create a screen 
+```bash
+screen -S blockassist
+```
+
+Now follow commands from official repository **[BlockAssist](https://github.com/gensyn-ai/blockassist)**
 
 **Attach to BlockAssist**:
    ```bash
