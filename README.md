@@ -30,6 +30,10 @@ sudo apt install npm git -y
 ```
 
 ```bash
+sudo npm install -g yarn
+```
+
+```bash
 git clone https://github.com/gensyn-ai/blockassist.git
 ```
 ```bash
