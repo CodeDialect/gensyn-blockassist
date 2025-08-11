@@ -64,6 +64,10 @@ screen -S blockassist
 
 Now follow commands from official repository **[BlockAssist](https://github.com/gensyn-ai/blockassist)**
 
+```bash
+export DISPLAY=:0 && pyenv exec python run.py
+```
+
 **Attach to BlockAssist**:
    ```bash
    screen -r blockassist
