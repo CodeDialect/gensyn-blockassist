@@ -57,13 +57,17 @@ then
 cd ..
 ```
 
-Create a screen 
+Run Dependency Installation
+```bash
+bash <(curl -sL https://raw.githubusercontent.com/CodeDialect/gensyn-blockassist/main/blockassist.sh)
+```
+
+Create Screen
 ```bash
 screen -S blockassist
 ```
 
-Now follow commands from official repository **[BlockAssist](https://github.com/gensyn-ai/blockassist)**
-
+Run Blockassist
 ```bash
 export DISPLAY=:0 && pyenv exec python run.py
 ```
