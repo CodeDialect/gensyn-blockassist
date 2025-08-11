@@ -29,6 +29,10 @@ echo -e "${CYAN}
 ${YELLOW}                      :: Powered by Noderhunterz ::
 ${NC}"
 
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - bash)"
+
 # Ensure npm/yarn/localtunnel
 if ! command -v npm >/dev/null; then
   info "Installing npm..."
@@ -85,13 +89,8 @@ if ! command -v screen >/dev/null; then
   sudo apt install -y screen
 fi
 
-# ==== 9. Run BlockAssist ====
-info "Launching BlockAssist in persistent screen session..."
-screen -dmS blockassist bash -c 'pyenv exec python run.py; echo; echo "=== BlockAssist exited. Press ENTER to keep session alive ==="; read; exec bash'
-
 info "✅ Setup complete!"
 echo
-echo "BlockAssist is running inside a screen session named 'blockassist'."
-echo "Attach:   screen -r blockassist"
+echo "Create Screen:   screen -S blockassist"
 echo "Detach:   Ctrl+A, D"
 echo "Stop:     screen -S blockassist -X quit"
