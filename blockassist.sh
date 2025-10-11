@@ -82,7 +82,7 @@ pyenv local 3.10
 
 # ==== 7. Install Python packages ====
 pip install --upgrade pip
-pip install psutil readchar
+pip install psutil readchar rich
 
 # ==== 8. Install screen if not installed ====
 if ! command -v screen >/dev/null; then
