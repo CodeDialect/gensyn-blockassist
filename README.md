@@ -26,11 +26,7 @@ This script automatically installs **[BlockAssist](https://github.com/gensyn-ai/
 sudo apt update && sudo apt upgrade -y
 ```
 ```bash
-sudo apt install npm git -y
-```
-
-```bash
-sudo npm install -g yarn
+sudo apt install git -y
 ```
 
 ```bash
@@ -38,27 +34,6 @@ git clone https://github.com/gensyn-ai/blockassist.git
 ```
 ```bash
 cd blockassist
-```
-```bash
-cd modal-login
-```
-```bash
-yarn install && yarn dev
-```
-
-Open new tab 
-
-```bash
-sudo npm install -g localtunnel
-```
-```bash
-lt --port 3000
-```
-
-Go back to old tab ctrl c that
-then
-```bash
-cd ..
 ```
 
 Run Dependency Installation
@@ -74,6 +49,21 @@ screen -S blockassist
 Run Blockassist
 ```bash
 export DISPLAY=:0 && pyenv exec python run.py
+```
+
+Open new tab 
+
+```bash
+sudo npm install -g localtunnel
+```
+```bash
+lt --port 3000
+```
+
+Go back to old tab ctrl c that
+then
+```bash
+cd ..
 ```
 
 **Attach to BlockAssist**:
