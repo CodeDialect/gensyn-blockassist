@@ -41,6 +41,11 @@ Run Dependency Installation
 bash <(curl -sL https://raw.githubusercontent.com/CodeDialect/gensyn-blockassist/main/blockassist.sh)
 ```
 
+Run bash
+```bash
+bash
+```
+
 Create Screen
 ```bash
 screen -S blockassist
